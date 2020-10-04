@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Myraid Pro", sans-serif;
+}
+
+
+
+.header{
+    
+
+    .header__menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        min-width: 1200px;
+        background: #00aa4b;
+        padding: 0 150px;
+        height: 48px;
+
+        .header__menu__mail{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 40px 0 26px;
+            a{
+                margin: 0 5px;
+            }
+        }
+        .header__menu__phone{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 0 0 0;
+
+            a{
+                margin: 0 5px;
+            }
+        }
+        
+        
+
+        a{
+            text-align: center;
+            font-size: 14px;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+            margin: 0 25px;
+        }
+
+        span{
+            height: 28px;
+            width: 1px;
+            background: white;
+            opacity: .5;
+        }
+    }
+
+    
+}
