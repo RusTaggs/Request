@@ -47,3 +47,12 @@
   background: white;
   opacity: 0.5;
 }
+.header .search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 64px;
+  padding: 0 150px;
+  background: #e8e7e7;
+}

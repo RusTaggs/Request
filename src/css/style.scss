@@ -58,6 +58,15 @@
             opacity: .5;
         }
     }
+    .search{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        height: 64px;
+        padding: 0 150px;
+        background: #e8e7e7;
+    }
 
     
 }
