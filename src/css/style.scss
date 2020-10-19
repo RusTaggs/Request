@@ -17,6 +17,9 @@ a{
     text-decoration: none;
     color: #191919;
 }
+body{
+    background: #f3f2f2;
+}
 
 .titleBig{
     font-size: 36px;
@@ -27,12 +30,12 @@ a{
 }
 .text{
     line-height: 20px;
-    font-size: 16px;
+    font-size: 14px;
     color: #191919;
 }
 
 .header{
-    height: 837px;
+    height: 800px;
     margin-bottom: 172px;
     .header__menu{
         background: #34a853;
@@ -263,5 +266,76 @@ a{
     }
 }
 .recomend{
-    margin-bottom: 172px;
+    margin-bottom: 225px;
+    text-align: center;
+    .recomend-container{
+        max-width: 1400px;
+        width: 100%;
+        margin: 0 auto;
+
+        .titleBig{
+            margin-bottom: 20px;
+        }
+        .recomend-main-text{
+            margin: 0 auto 65px;
+            width: 50%;
+            color: #777;
+        }
+        .recomend-list{
+
+            .recomend-right{
+
+            }
+            .recomend-left{
+                width: 45%;
+                margin-right: 10px;
+                overflow: hidden;
+                .recomend-item{
+                    padding-top: 60px;
+                    padding: 30px;
+                    background: #fff;
+                    color: #000;
+                    text-align: center;
+                    width: 100%;
+                    height: 100%;
+                    
+                    position: relative;
+                    
+                    
+
+                    .recomend-item__content{
+                        text-align: center;
+                        margin-bottom: 30px;
+
+                        .recomend-item__name{
+                            line-height: 1;
+                            display: block;
+                            font-size: 20px;
+                            font-weight: 300;
+                            text-transform: uppercase;
+                        }
+                        .recomend-item__category{
+                            font-size: 30px;
+                            line-height: 1.2;
+                            margin-bottom: 15px;
+                            display: block;
+                        }
+                        .recomend-item__desk{
+                            font-size: 14px;
+                            font-weight: 400;
+                            margin: 0 auto;
+                            width: 60%;
+                        }
+                    }
+                    .recomend-item__img{
+                        width: 450px;
+                        margin: 0 auto -400px auto;
+                        
+                    }
+                    
+                }
+            }
+        }
+    }
+
 }
