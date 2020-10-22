@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <title>Столовая.РУ</title>
 </head>
 <body>
@@ -46,50 +47,53 @@
         
         
         <div class="search">
-            <div class="search-logo">
-                <img src="src/img/Logo-header.png" alt="">
-                <p>Столовая.РУ</p>
-            </div>
-
-            <div class="search-bar">
-                <div class="search-bar__list">
-                    
-                    <p>Все</p>
-                    <img src="src/img/list-mark.png" alt="">
-                    
+            <div class="search-main">
+                <div class="search-logo">
+                    <img src="src/img/Logo-header.png" alt="">
+                    <p>Столовая.РУ</p>
                 </div>
-                <div class="search-bar__input">
-                    <input type="text">
-                </div>
-                <div class="search-bar__sub">
-                    <button>
-                        <img src="src/img/search.png" alt="">
-                    </button>
-                </div>
-            </div>
-
-            <div class="search-container">
-
-                
-
-                <div class="search-contact">
-                    <img src="src/img/Contact.png" alt="">
-                    <p>Мы на портале поставщиков</p>
-                </div>
-                <div class="search-cart">
-                    <div class="cart-img">
-                        <p class="cart-counter">
-                            12
-                        </p>
-                        <img src="src/img/Cart.png" alt="">
+    
+                <div class="search-bar">
+                    <div class="search-bar__list">
+                        
+                        <p>Все</p>
+                        <img src="src/img/list-mark.png" alt="">
+                        
                     </div>
-                    <div class="cart-text">
-                        <p>Сумма</p>
-                        <p class="cart-sum">150000 руб</p>
+                    <div class="search-bar__input">
+                        <input type="text">
                     </div>
+                    <div class="search-bar__sub">
+                        <button>
+                            <img src="src/img/search.png" alt="">
+                        </button>
+                    </div>
+                </div>
+    
+                <div class="search-container">
+    
                     
+    
+                    <div class="search-contact">
+                        <img src="src/img/Contact.png" alt="">
+                        <p>Мы на портале поставщиков</p>
+                    </div>
+                    <a href="" class="search-cart">
+                        <div class="cart-img">
+                            <p class="cart-counter">
+                                12
+                            </p>
+                            <img src="src/img/Cart.png" alt="">
+                        </div>
+                        <div class="cart-text">
+                            <p>Сумма</p>
+                            <p class="cart-sum"><strong>150 000 руб</strong></p>
+                        </div>
+                        
+                    </a>
                 </div>
             </div>
+            
             
         </div>
 
@@ -168,37 +172,175 @@
         <div class="header-main">
             
             <div class="main-container">
+
+                
+
                 <div class="breadcrumbs">
+                    <p class="title">Целевые предложения</p>
                     <ul class="breadcrumbs__list" itemscope itemtype="http://schema.org/BreadcrumbList">
                         <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
                             <a itemprop="item" href="#" class="breadcrumbs__link" >
-                                <span itemprop="name">Главная</span>
+                                <span itemprop="name">Кафе, барам, ресторанам</span>
                             </a>
                             <meta itemprop="position" content="1" />
                         </li>
                         <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
                             <a itemprop="item" href="#" class="breadcrumbs__link">
-                                <span itemprop="name">Название раздела</span>
+                                <span itemprop="name">Детским садам и школам</span>
                             </a>
                             <meta itemprop="position" content="2" />
                         </li> 
                         <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
                             <a itemprop="item" href="#" class="breadcrumbs-item breadcrumbs-item-current">
                                 <span itemprop="name">
-                                   Название статьи
+                                   Таблет-питание
                                 </span>
                             </a>
                             <meta itemprop="position" content="3" />
                         </li>
+                        <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                            <a itemprop="item" href="#" class="breadcrumbs-item breadcrumbs-item-current">
+                                <span itemprop="name">
+                                   Для столовых
+                                </span>
+                            </a>
+                            <meta itemprop="position" content="4" />
+                        </li>
+                        <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                            <a itemprop="item" href="#" class="breadcrumbs-item breadcrumbs-item-current">
+                                <span itemprop="name">
+                                   Для пищеблоков
+                                </span>
+                            </a>
+                            <meta itemprop="position" content="5" />
+                        </li>
+                        <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                            <a itemprop="item" href="#" class="breadcrumbs-item breadcrumbs-item-current">
+                                <span itemprop="name">
+                                   Государственным заказам
+                                </span>
+                            </a>
+                            <meta itemprop="position" content="6" />
+                        </li>
+                        <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                            <a itemprop="item" href="#" class="breadcrumbs-item breadcrumbs-item-current">
+                                <span itemprop="name">
+                                   Для магазинов
+                                </span>
+                            </a>
+                            <meta itemprop="position" content="7" />
+                        </li>
+                        <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                            <a itemprop="item" href="#" class="breadcrumbs-item breadcrumbs-item-current">
+                                <span itemprop="name">
+                                   Для войсковых частей
+                                </span>
+                            </a>
+                            <meta itemprop="position" content="8" />
+                        </li>
+                        <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                            <a itemprop="item" href="#" class="breadcrumbs-item breadcrumbs-item-current">
+                                <span itemprop="name">
+                                   Все предложения
+                                </span>
+                            </a>
+                            <meta itemprop="position" content="9" />
+                        </li>
                      </ul>
                      
                 </div>
-                <div class="slider"></div>
-                <div class="sell"></div>
+                <div class="slider">
+                    <div class="swiper-container">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <div class="slide-left">
+                                    <p class="text">Портфолио</p>
+                                    <div class="slide-text">
+                                        <p class="title">НИИ скорой помощи  им. Н.В. Склифосовского</p>
+                                        <p class="text">Оборудование для пищеблоков</p>
+                                    </div>
+                                    <div class="more-button">
+                                        <a href="">Подробнее</a>
+                                    </div>
+                                </div>
+                                <div class="slide-right">
+                                    <img src="src/img/slider-image.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide-left">
+                                    <p class="text">Портфолио</p>
+                                    <div class="slide-text">
+                                        <p class="title">НИИ скорой помощи  им. Н.В. Склифосовского</p>
+                                        <p class="text">Оборудование для пищеблоков</p>
+                                    </div>
+                                    <div class="more-button">
+                                        <a href="">Подробнее</a>
+                                    </div>
+                                </div>
+                                <div class="slide-right">
+                                    <img src="src/img/slider-image.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide-left">
+                                    <p class="text">Портфолио</p>
+                                    <div class="slide-text">
+                                        <p class="title">НИИ скорой помощи  им. Н.В. Склифосовского</p>
+                                        <p class="text">Оборудование для пищеблоков</p>
+                                    </div>
+                                    <div class="more-button">
+                                        <a href="">Подробнее</a>
+                                    </div>
+                                </div>
+                                <div class="slide-right">
+                                    <img src="src/img/slider-image.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide-left">
+                                    <p class="text">Портфолио</p>
+                                    <div class="slide-text">
+                                        <p class="title">НИИ скорой помощи  им. Н.В. Склифосовского</p>
+                                        <p class="text">Оборудование для пищеблоков</p>
+                                    </div>
+                                    <div class="more-button">
+                                        <a href="">Подробнее</a>
+                                    </div>
+                                </div>
+                                <div class="slide-right">
+                                    <img src="src/img/slider-image.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                    
+                    </div>
+                </div>
+                <div class="sell">
+
+                    <img src="src/img/giftbox.png" alt="">
+                    <div class="sell-text">
+                        <p class="text">Самые низкие цены</p>
+                        <p class="title">Распродажа</p>
+                        
+                    </div>
+                    <a href="">Каталог распродаж</a>
+                </div>
             </div>
 
             <div class="companies">
-
+                <div><a href=""><img src="src/img/abat.png" alt=""></a></div>
+                <div><a href=""><img src="src/img/atesy.png" alt=""></a></div>
+                <div><a href=""><img src="src/img/hicold.png" alt=""></a></div>
+                <div><a href=""><img src="src/img/rational.png" alt=""></a></div>
+                <div><a href=""><img src="src/img/simeco.png" alt=""></a></div>
+                <div>
+                    <a href="">Все бренды</a>
+                </div>
             </div>
         </div>
     </header>
@@ -484,6 +626,7 @@
             </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="src/js/main.js"></script>
 </body>
 </html>
