@@ -18,19 +18,24 @@ var mySwiper = new Swiper('.swiper-container', {
 });
 
 $(document).ready(function(){
+  //Главное меню
   $(".toggle-bar").click(function(){
     $('.main-menu').toggleClass('active');
     $('body').toggleClass('active');
   });
+
+//Меню оборудования
   $(".header-equipment__mobile").click(function(){
     $('.equipment-menu').addClass('active');
     $('body').addClass('active');
   });
+
   $(".equipment__exit").click(function(){
     $('.equipment-menu').removeClass('active');
     $('body').removeClass('active');
   });
 
+//Кнопка показывающая скрытый текст портфолио
   $(".show-more-button").click(function(){
     $('.portfolio-left__text3').slideToggle("slow");
     $('.show-more-button').toggle()
