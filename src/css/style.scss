@@ -1480,8 +1480,8 @@ body.active {
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        padding: 0 5%;
-        height: 100px;
+        padding: 0 4%;
+        height: 102px;
         border-bottom: 1px solid #e5e5e5;
 
         .menu-left {
@@ -1489,13 +1489,13 @@ body.active {
             flex-direction: row;
             align-items: center;
             justify-content: space-between;
-            width: 50%;
+            width: 54%;
 
             .toggle-bar {
                 border-radius: 100%;
                 background: #fda11c;
-                width: 70px;
-                height: 70px;
+                width: 75px;
+                height: 75px;
                 padding: 25px;
                 display: flex;
                 flex-direction: column;
@@ -1504,7 +1504,7 @@ body.active {
 
                 span {
 
-                    width: 25px;
+                    width: 28px;
                     height: 2px;
                     background: #fff;
                 }
@@ -1516,8 +1516,8 @@ body.active {
                 align-items: center;
                 width: 72%;
 
-                .logo-img {
-                    margin-right: 2%;
+                img {
+                    margin-right: 10px;
                 }
 
                 .logo-text {
@@ -1542,7 +1542,8 @@ body.active {
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
-            width: 30%;
+            width: 32.6%;
+            padding-top: 8px;
 
             .cart-mobile {
                 display: flex;
@@ -1554,35 +1555,48 @@ body.active {
                 .cart-counter {
                     color: #fda11c;
                     position: absolute;
-                    font-size: 25px;
-                    top: -20px;
-                    left: 20px;
+                    font-size: 26px;
+                    top: -22px;
+                    left: 22px;
+                }
+                .cart-img{
+                    width: 60px;
+                }
+            }
+            .contact-button{
+                margin-left: 10px;
+            }
+            .search-button{
+
+                .search-img{
+                    width: 52px;
                 }
             }
         }
     }
 
     .header-equipment__mobile {
-        height: 88px;
+        height: 84px;
         display: flex;
         align-items: center;
-        padding: 0 5%;
+        padding: 0 4%;
         flex-direction: row;
         position: relative;
 
         p {
-            font-size: 30px;
+            font-size: 32px;
         }
 
         p::after {
             content: ">";
-            right: 5%;
+            right: 4%;
             position: absolute;
             color: #777;
         }
     }
 
     .header {
+        margin-bottom: 140px;
         .header__menu {
             .header__menu__container {
                 display: none;
@@ -1602,7 +1616,7 @@ body.active {
 
             .main-container {
                 flex-wrap: wrap;
-
+                margin-bottom: 30px;
                 .breadcrumbs {
                     display: none;
                 }
@@ -1610,16 +1624,16 @@ body.active {
                 .slider {
                     width: 100%;
                     margin-left: 0;
-                    margin-bottom: 20px;
+                    margin-bottom: 30px;
                     .swiper-container{
-                        height: 572px;
+                        height: 570px;
 
                         .swiper-wrapper{
                             .swiper-slide{
                                 padding: 47px 4.3%;
                                 .slide-left{
                                     .text{
-                                        font-size: 25px;
+                                        font-size: 26px;
                                     }
                                     .more-button{
                                         a{
@@ -1631,16 +1645,46 @@ body.active {
                                         }
                                     }
                                     .slide-text{
+                                        padding: 47px 0;
                                         .title{
                                             font-size: 40px;
                                         }
                                         .text{
-                                            font-size: 25px;
+                                            font-size: 26px;
                                         }
                                         
                                         
                                     }
                                 }
+                            }
+                            .slide-right{
+                                width: 41%;
+                                margin-bottom: 22px;
+                                img{
+                                    width: 282px;
+                                }
+                            }
+                        }
+
+                        .swiper-button-prev,
+                        .swiper-button-next{
+                            bottom: 42px !important;
+                            
+                            --swiper-navigation-size: 26px;
+                        }
+                        .swiper-button-next{
+                            right: 36px;
+                        }
+                        .swiper-button-prev{
+                            left: 36px;
+                        }
+                        .swiper-pagination{
+                            bottom: 42px !important;
+
+                            .swiper-pagination-bullet{
+                                margin: 0 10px;
+                                width: 16px;
+                                height: 16px;
                             }
                         }
                     }
@@ -1648,26 +1692,32 @@ body.active {
 
                 .sell {
                     width: 100%;
-                    margin: 0 5%;
+                    margin: 0 4%;
                     height: auto;
-                    padding: 80px 50px;
+                    padding: 84px 60px 67px;
 
                     img {
-                        width: 120px;
-
+                        width: 121px;
+                        margin-bottom: 26px;
                     }
 
                     a {
                         font-size: 30px;
                     }
+                    a::after{
+                        margin-left: 20px;
+                        margin-right: 0;
+                    }
 
                     .sell-text {
+                        margin-bottom: 35px;
                         .title {
                             font-size: 50px;
                         }
 
                         .text {
-                            font-size: 25px;
+                            font-size: 26px;
+                            margin-bottom: 7px;
                         }
                     }
                 }
@@ -1686,7 +1736,7 @@ body.active {
         justify-content: center;
 
         background: #fff;
-        margin: 0 5%;
+        margin: 0 4%;
 
         .companies-mobile__item {
             flex-wrap: wrap;
@@ -1695,14 +1745,20 @@ body.active {
             align-items: center;
             justify-content: space-between;
             border-bottom: 1px solid #f3f2f2;
-            padding: 15px 0;
+            padding: 45px 0;
             width: 100%;
 
             
             div{
-                width: 300px;
-                padding: 10px;
+                width: 45%;
+                padding: 10px 10px;
                 text-align: center;
+                a{
+                    font-size: 30px;
+                    img{
+                        width: 223px;
+                    }
+                }
             }
         }
     }
@@ -1715,17 +1771,17 @@ body.active {
         margin-bottom: 0;
 
         .recomend-container {
-
-
-
+            padding: 0 3.7%;
             .titleBig {
                 font-size: 50px;
+                margin-bottom: 15px;
             }
 
             .recomend-main-text {
                 font-size: 30px;
                 width: 90%;
-                line-height: 1.5;
+                line-height: 1.2;
+                margin: 0px auto 80px;
             }
 
             .recomend-list {
@@ -1734,34 +1790,43 @@ body.active {
                 .recomend-right {
                     width: 100%;
 
+                    .recomend-item{
+                        height: 494px;
+                        margin-bottom: 10px;
+                    }
+
                     .recomend-item:first-child {
                         .recomend-item__content {
 
-                            left: auto;
+                            left: 40%;
                             right: 0;
-                            width: 57%;
-                            top: 10%;
+                            width: 53%;
+                            top: 14%;
 
                             .recomend-item__name {
-                                font-size: 24px;
+                                font-size: 31px;
                             }
 
                             .recomend-item__category {
-                                font-size: 28px;
-                                margin-top: 30px;
-                                margin-bottom: 45px;
+                                font-size: 40px;
+                                margin-top: 26px;
+                                margin-bottom: 60px;
                             }
 
                             .recomend-item__desk {
-                                width: 90%;
+                                width: 100%;
+                                p{
+                                    font-size: 27px;
+                                    line-height: 0.96;
+                                }
                             }
                         }
 
                         .recomend-item__img {
-                            margin: 25px 0 5px -265px;
+                            margin: 49px 0 5px -153px;
 
                             img {
-                                width: 400px;
+                                width: 394px;
                             }
                         }
                     }
@@ -1774,25 +1839,28 @@ body.active {
                             right: auto;
                             left: 10%;
                             width: 57%;
-                            top: 10%;
+                            top: 28%;
 
                             .recomend-item__name {
-                                font-size: 24px;
+                                font-size: 31px;
                             }
 
                             .recomend-item__category {
-                                font-size: 28px;
-                                margin-top: 30px;
-                                margin-bottom: 45px;
+                                font-size: 40px;
+                                margin-top: 10px;
+                                margin-bottom: 48px;
                             }
 
                             .recomend-item__desk {
                                 width: 90%;
+                                p{
+                                    font-size: 24px;
+                                }
                             }
                         }
 
                         .recomend-item__img {
-                            margin: 0 0px -12px 452px;
+                            margin: 43px 0px -12px 463px;
 
                             img {
                                 width: 400px;
@@ -1805,19 +1873,22 @@ body.active {
                 .recomend-left {
                     width: 100%;
                     margin-right: 0;
+                    margin-bottom: 10px;
 
                     .recomend-item {
                         display: flex;
                         flex-direction: row;
-
-                        padding-top: 20px;
+                        height: 497px;
+                        margin-bottom: -2px;
+                        padding: 47px 71px 30px;
+                        padding-top: 47px;
 
                         .recomend-item__img {
                             width: auto;
-                            margin: 0 -90px -120px auto;
+                            margin: -22px -102px -120px auto;
 
                             img {
-                                width: 330px;
+                                width: 271px;
                             }
                         }
 
@@ -1835,18 +1906,19 @@ body.active {
                                 width: 75%;
 
                                 p {
-                                    font-size: 18px;
+                                    font-size: 24px;
                                 }
                             }
 
                             .recomend-item__name {
-                                font-size: 24px;
+                                font-size: 34px;
+                                margin-top: 28px;
                             }
 
                             .recomend-item__category {
-                                font-size: 28px;
-                                margin-top: 30px;
-                                margin-bottom: 45px;
+                                font-size: 41px;
+                                margin-top: 10px;
+                                margin-bottom: 49px;
                             }
                         }
                     }
@@ -1859,15 +1931,17 @@ body.active {
     .recomend-item__desk {
 
         p {
-            font-size: 18px;
+            
             color: #777;
         }
     }
 
 
     .portfolio {
+        margin-bottom: 160px;
         .portfolio-container {
             flex-wrap: wrap-reverse;
+            padding: 0 3.7%;
 
             .portfolio-left {
                 width: 100%;
@@ -1889,11 +1963,14 @@ body.active {
 
             .portfolio-left {
                 h1 {
-                    font-size: 50px;
+                    font-size: 51px;
+                    margin-bottom: 55px;
                 }
 
                 p {
-                    font-size: 30px;
+                    font-size: 32px;
+                    line-height: 1.3;
+                    width: 96%;
                 }
 
                 .show-more-button {
@@ -1903,26 +1980,30 @@ body.active {
                     display: flex;
                     align-items: center;
                     justify-content: center;
+                    margin-top: 67px;
+                    margin-left: 4px;
                 }
             }
 
             .portfolio-right {
                 width: 100%;
-                margin-top: 150px;
-                margin-bottom: 150px;
+                margin-top: 100px;
+                margin-bottom: 130px;
                 margin-left: 60px;
 
                 .logo {
+                    margin-bottom: 56px;
                     .img {
+                        margin-bottom: 58px;
                         img {
-                            width: 250px;
+                            width: 255px;
                         }
                     }
 
                     .title {
                         p {
                             font-size: 50px;
-
+                            margin-bottom: 10px;
                         }
 
                     }
@@ -1935,31 +2016,32 @@ body.active {
                 }
 
                 .company {
-
+                    margin-bottom: 44px;
                     .title {
-                        p {
-                            font-size: 40px;
-                        }
+                        
+                            font-size: 41px;
+                            margin-bottom: 11px;
+                        
                     }
 
                     .text {
-                        p {
-                            font-size: 30px;
-                        }
+                        
+                            font-size: 32px;
+                        
                     }
                 }
 
                 .about {
-                    p {
-                        font-size: 30px;
-                    }
+                    
+                        font-size: 32px;
+                    
                 }
             }
         }
     }
 
     .contacts {
-        padding: 30px 0;
+        padding: 50px 0 51px;
 
         .contacts-container {
             .contacts-lists {
@@ -1979,8 +2061,8 @@ body.active {
                     position: relative;
 
                     .contacts__title {
-                        padding: 10px 0;
-                        font-size: 30px;
+                        padding: 24px 0;
+                        font-size: 32px;
                         color: #fff;
                     }
 
@@ -1988,7 +2070,7 @@ body.active {
                         content: "+";
                         color: #fff;
                         position: absolute;
-                        right: 10px;
+                        right: 3px;
                     }
                 }
 
@@ -2013,27 +2095,32 @@ body.active {
     }
 
     .footer {
+        padding: 35px 0 30px;
         .footer-container {
             flex-wrap: wrap;
             justify-content: center;
+            padding: 0 6%;
 
             .footer-left {
                 width: 100%;
-                padding-bottom: 20px;
+                padding-bottom: 26px;
 
                 .footer-left__img {
+                    margin-right: 26px;
+                    margin-left: 5px;
                     img {
-                        width: 80px;
+                        width: 88px;
                     }
                 }
 
                 .footer-left__text {
                     .text1 {
                         font-size: 50px;
+                        padding-bottom: 10px;
                     }
 
                     .text2 {
-                        font-size: 36px;
+                        font-size: 33px;
                     }
 
                 }
@@ -2043,7 +2130,7 @@ body.active {
                 width: 100%;
 
                 p {
-                    font-size: 40px;
+                    font-size: 44px;
                 }
             }
         }
@@ -2054,7 +2141,7 @@ body.active {
 @media screen and (max-width: 467px) {
     .header {
 
-        margin-bottom: 60px;
+        margin-bottom: 74px;
         .header-mobile{
             .header-menu__mobile{
                 height: 55px;
@@ -2124,6 +2211,9 @@ body.active {
                         }
                     }
                 }
+                .main-menu{
+                    top: 55px;
+                }
             }
         }
         .header-equipment__mobile{
@@ -2143,25 +2233,25 @@ body.active {
 
                 .sell {
                     border: 1px solid #ffaf2d;
-                    padding: 36px 30px 31px;
-                    margin: 0 3.5%;
+                    padding: 46px 34px 36px;
+                    margin: 0 3.8%;
                     .sell-text {
-                        margin-bottom: 14px;
+                        margin-bottom: 17px;
                         .text {
-                            font-size: 12px;
+                            font-size: 14px;
                         }
 
                         .title {
-                            font-size: 24px;
+                            font-size: 27px;
                         }
 
                     }
                     img{
-                        width: 60px;
-                        margin-bottom: 5px;
+                        width: 65px;
+                        margin-bottom: 9px;
                     }
                     a {
-                        font-size: 15px;
+                        font-size: 17px;
                     }
                     a::after{
                         margin-left: 7px;
@@ -2177,17 +2267,17 @@ body.active {
                                 .slide-left{
                                     width: 60%;
                                     .text{
-                                        font-size: 12px;
-                                        margin-bottom: 15px;
+                                        font-size: 14px;
+                                        margin-bottom: 20px;
                                     }
                                     .slide-text{
                                         padding: 0;
                                         .title{
-                                            font-size: 20px;
+                                            font-size: 22px;
 
                                         }
                                         .text{
-                                            font-size: 12px;
+                                            font-size: 14px;
                                             margin-top: 0;
                                         }
                                     }
@@ -2195,10 +2285,10 @@ body.active {
                                         margin-top: 15px;
                                         margin-bottom: 30px;
                                        a{
-                                            height: 25px;
+                                            height: 30px;
                                             margin-bottom: 0;
-                                            padding: 0px 16px;
-                                            font-size: 14px;
+                                            padding: 0px 18px;
+                                            font-size: 16px;
                                             line-height: 1.7;
                                        }
                                     }
@@ -2215,32 +2305,37 @@ body.active {
 
                         .swiper-button-prev,
                         .swiper-button-next{
-                            bottom: 24px !important;
+                            bottom: 28px !important;
                             
                             --swiper-navigation-size: 12px;
                         }
                         .swiper-button-next{
-                            right: 17px;
+                            right: 20px;
                         }
                         .swiper-button-prev{
-                            left: 17px;
+                            left: 20px;
                         }
                         .swiper-pagination{
-                            bottom: 17px !important;
+                            bottom: 21px !important;
+
+                            .swiper-pagination-bullet{
+                                margin: 0 6px;
+                            }
                         }
                     }
                 }
             }
             .companies-mobile{
-                
+                margin: 0 4%;
                     .companies-mobile__item{
+                        padding: 19px 0;
                        div{
-                            width: 50%;
+                            width: 45%;
                             padding: 10px 10px;
                             text-align: center;
                             a{
                                 img{
-                                    width: 115px;
+                                    width: 125px;
                                 }
                             }
                        }
@@ -2252,42 +2347,46 @@ body.active {
 
     .recomend {
         .recomend-container {
-            padding: 0 3.5%;
+            padding: 0 3.8%;
             .titleBig {
-                font-size: 24px;
-                margin-bottom: 5px;
+                font-size: 27px;
+                margin-bottom: 7px;
             }
 
             .recomend-main-text {
-                font-size: 14px;
-                margin: 0 auto 23px;
+                font-size: 16px;
+                margin: 0 auto 25px;
             }
 
             .recomend-list{
                 .recomend-left{
                     .recomend-item{
-                        height: 236px;
+                        height: 267px;
                         margin-bottom: -2px;
-                        padding-top: 45px;
+                        padding: 47px 37px 30px;
+                        padding-top: 47px;
+                        
                         .recomend-item__content{
                             .recomend-item__category{
-                                font-size: 20px;
-                                margin-top: 12px;
-                                margin-bottom: 20px;
+                                font-size: 22px;
+                                margin-top: 7px;
+                                margin-bottom: 27px;
                             }
                             .recomend-item__name{
-                                font-size: 16px;
+                                font-size: 15px;
+                                margin-top: 0;
                             }
                             .recomend-item__desk{
+                                width: 85%;
                                 p{
-                                    font-size: 12px;
+                                    font-size: 14px;
                                 }
                             }
                         }
                         .recomend-item__img{
-                            margin: -33px -44px -120px auto;
+                            margin: -33px -54px -120px auto;
                             img{
-                                width: 126px;
+                                width: 145px;
                             }
                         }
                     }
@@ -2295,7 +2394,7 @@ body.active {
                 }
                 .recomend-right{
                     .recomend-item{
-                        height: 231px;
+                        height: 270px;
                         margin-bottom: 1px;
 
                         
@@ -2304,26 +2403,26 @@ body.active {
                     .recomend-item:first-child{
                         .recomend-item__content{
                             width: 60%;
-                            top: 14%;
+                            top: 16%;
                             .recomend-item__category{
-                                font-size: 20px;
+                                font-size: 22px;
                                 margin-top: 12px;
-                                margin-bottom: 20px;
+                                margin-bottom: 32px;
                             }
                             .recomend-item__name{
                                 font-size: 16px;
                             }
                             .recomend-item__desk{
                                 p{
-                                    font-size: 12px;
+                                    font-size: 14px;
                                 }
                             }
                         }
                         .recomend-item__img{
-                            margin: 25px 0 5px -72px;
+                            margin: 32px 0 5px -83px;
                             a{
                                 img{
-                                    width: 186px;
+                                    width: 210px;
                                 }
                             }
                         }
@@ -2331,26 +2430,26 @@ body.active {
                     .recomend-item:last-child{
                         .recomend-item__content{
                             width: 60%;
-                            top: 14%;
+                            top: 29%;
                             .recomend-item__category{
-                                font-size: 20px;
-                                margin-top: 12px;
-                                margin-bottom: 20px;
+                                font-size: 22px;
+                                margin-top: 5px;
+                                margin-bottom: 23px;
                             }
                             .recomend-item__name{
                                 font-size: 16px;
                             }
                             .recomend-item__desk{
                                 p{
-                                    font-size: 12px;
+                                    font-size: 14px;
                                 }
                             }
                         }
                         .recomend-item__img{
-                            margin: 12px 0px 0px 217px;
+                            margin: 15px 0px 0px 246px;
                             a{
                                 img{
-                                    width: 186px;
+                                    width: 210px;
                                 }
                             }
                         }
@@ -2363,53 +2462,59 @@ body.active {
     }
 
     .portfolio {
-        margin-bottom: 73px;
+        margin-bottom: 84px;
         .portfolio-container {
             padding: 0 3.5%;
             .portfolio-left {
-                width: 95%;
+                width: 89%;
                 h1 {
-                    font-size: 24px;
-                    margin-bottom: 25px;
+                    font-size: 27px;
+                    margin-bottom: 30px;
                 }
 
                 p {
-                    font-size: 15px;
+                    font-size: 16px;
+                    line-height: 1.33;
                 }
 
                 .show-more-button {
-                    width: 50px;
-                    height: 50px;
-                    font-size: 18px;
-                    margin-top: 33px;
+                    width: 55px;
+                    height: 55px;
+                    font-size: 26px;
+                    margin-top: 38px;
+                }
+
+                h2{
+                    font-size: 27px;
+                   
                 }
             }
 
             .portfolio-right {
-                margin-left: 35px;
-                margin-top: 30px;
+                margin-left: 33px;
+                margin-top: 33px;
                 margin-bottom: 62px;
                 .logo {
-                    margin-bottom: 17px;
+                    margin-bottom: 24px;
                     .img {
-                        margin-bottom: 20px;
+                        margin-bottom: 24px;
                         img {
-                            width: 120px;
+                            width: 136px;
                         }
                     }
 
                     .title {
-                        line-height: 1.2;
+                        line-height: 1.1;
 
                         p {
-                            font-size: 24px;
+                            font-size: 28px;
                         }
 
                     }
 
                     .text {
                         p {
-                            font-size: 12px;
+                            font-size: 14px;
                         }
                     }
                 }
@@ -2417,18 +2522,18 @@ body.active {
                 .company {
                     margin-bottom: 20px;
                     .title {
-                        font-size: 19px;
+                        font-size: 22px;
                     }
 
                     .text {
-                        font-size: 15px;
+                        font-size: 17px;
                     }
 
                 }
 
                 .about {
                     p {
-                        font-size: 14px;
+                        font-size: 17px;
                     }
                 }
             }
@@ -2436,7 +2541,7 @@ body.active {
     }
 
     .contacts{
-        padding: 26px 0;
+        padding: 25px 0;
         .contacts-container{
             .contacts-lists{
                 margin: 0 4%;
@@ -2444,7 +2549,13 @@ body.active {
                 .contacts-list{
                     .contacts__title{
                         margin-left: 10px;
-                        font-size: 16px;
+                        font-size: 17px;
+                        padding: 13px 0;
+
+                        
+                    }
+                    .contacts__title::after{
+                        right: 12px;
                     }
                 }
             }
@@ -2453,33 +2564,33 @@ body.active {
 
     .footer {
 
-        padding: 15px 0;
+        padding: 24px 0 26px;
 
         .footer-container {
-            padding: 0 4% 0 6.5%;
+            padding: 0 4% 0 6.7%;
             .footer-left {
-                padding-bottom: 10px;
+                padding-bottom: 13px;
                 .footer-left__img {
                     margin-right: 14px;
                     img {
-                        width: 42px;
+                        width: 47px;
                     }
                 }
 
                 .footer-left__text {
                     .text1 {
-                        font-size: 23px;
+                        font-size: 27px;
                     }
 
                     .text2 {
-                        font-size: 15px;
+                        font-size: 16px;
                     }
                 }
             }
             .footer-right{
                 .footer-right__text{
                     p{
-                        font-size: 20px;
+                        font-size: 23px;
                     }
                 }
             }
@@ -2560,6 +2671,9 @@ body.active {
                             width: 28px;
                         }
                     }
+                }
+                .main-menu{
+                    top: 48px;
                 }
             }
         }
