@@ -2151,6 +2151,7 @@ body.active {
                 .menu-right{
                     width: 33%;
                     margin-top: 7px;
+                    padding-top: 0;
                     .search-button{
                         .search-img{
                             img{
@@ -2172,6 +2173,7 @@ body.active {
                             left: 12px;
                         }
                         .cart-img{
+                            width: auto;
                             img{
                                 width: 32px;
                             }
@@ -2233,12 +2235,13 @@ body.active {
 
                 .sell {
                     border: 1px solid #ffaf2d;
-                    padding: 46px 34px 36px;
+                    padding: 47px 34px 37px;
                     margin: 0 3.8%;
                     .sell-text {
                         margin-bottom: 17px;
                         .text {
                             font-size: 14px;
+                            margin-bottom: -2px;
                         }
 
                         .title {
@@ -2320,6 +2323,8 @@ body.active {
 
                             .swiper-pagination-bullet{
                                 margin: 0 6px;
+                                width: 8px;
+                                height: 8px;
                             }
                         }
                     }
@@ -2334,6 +2339,7 @@ body.active {
                             padding: 10px 10px;
                             text-align: center;
                             a{
+                                font-size: 16px;
                                 img{
                                     width: 125px;
                                 }
@@ -2640,7 +2646,7 @@ body.active {
                     }
                 }
                 .menu-left{
-                    width: 49%;
+                    width: 54%;
 
 
                     .toggle-bar{
@@ -2666,7 +2672,7 @@ body.active {
                         }
                         
                         img{
-                            margin-right: 2%;
+                            margin-right: 3px;
                             margin-top: 0;
                             width: 28px;
                         }
@@ -2756,7 +2762,7 @@ body.active {
                                 }
                                 .slide-right{
                                     width: 41%;
-                                    margin-bottom: 13px;
+                                    margin-bottom: 18px;
                                     img{
                                         width: 130px;
                                     }
@@ -2778,6 +2784,12 @@ body.active {
                         }
                         .swiper-pagination{
                             bottom: 17px !important;
+
+                            .swiper-pagination-bullet{
+                                margin: 0 5px;
+                                width: 7px;
+                                height: 7px;
+                            }
                         }
                     }
                 }
