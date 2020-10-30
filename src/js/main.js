@@ -41,4 +41,31 @@ $(document).ready(function(){
     $('.show-more-button').toggle()
   });
 
+  //Вызов формы заявок
+
+  $('.header__menu__phone_button, .close-contact-form, .shadow1, .shadow2').click(function(){
+    $('.contact-form, .shadow1, .shadow2').fadeToggle();
+    $('.header__menu__phone').toggleClass('active');
+    
+  });
+
+  //Закрытие окон при скроле
+  $(window).scroll(function(){
+    $('.contact-form, .shadow1, .shadow2, .category-list').fadeOut();
+    
+  });
+
+  //Вызов выборки категорий поиска
+  $('.search-bar__list').click(function(){
+    $('.category-list').fadeToggle();
+  });
+
+  //Вызов окна при клике по оборудованию
+
+  $('.equipment-container__item').click(function(){
+    $('.equipment-list').fadeToggle();
+  });
+  
+
+
 })
