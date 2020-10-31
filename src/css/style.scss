@@ -182,8 +182,7 @@ body.active {
             .contact-form{
                 background: #fff;
                 position: absolute;
-                width: 750px;
-                padding: 60px 50px;
+                padding: 0px 50px 60px;
                 right: 2%;
                 top: 48px;
                 z-index: 1;
@@ -192,9 +191,116 @@ body.active {
                 opacity: 1;
 
                 .close-contact-form{
-                    padding: 20px;
+                    text-align: right;
                     cursor: pointer;
+                    font-size: 24px;
+                    padding: 20px 0;
                 }
+
+                .contact-form-container{
+                    display: flex;
+                    
+                    align-items: center;
+                    .contact-form-left{
+                        display: flex;
+                        flex-direction: column;
+                        margin-right: 100px;
+                        .left-header{
+                            margin-bottom: 20px;
+                            .title{
+                                font-size: 24px;
+                                color: #00aa4b;
+                            }
+                            .text{
+                                font-size: 16px;
+                                color: #777;
+                            }
+                        }
+                        .contact-method{
+                            
+                            .text{
+                                font-size: 16px;
+                                margin-bottom: 10px;
+                            }
+
+                            .method-item{
+                                display: flex;
+                                align-items: center;
+                                padding: 10px 0;
+                                
+                                img{
+                                    width: 21px;
+                                    margin-right: 10px;
+                                }
+                                p{
+                                    font-size: 18px;
+                                    text-align: left;
+                                    padding: 5px 0;
+                                    transition: .2s;
+                                }
+                                p:hover{
+                                    border-bottom: 1px solid #000;
+                                }
+                            }
+                            .method-item:first-child{
+                                img{
+                                    margin: 0 auto;
+                                    width: auto;
+                                }
+                            }
+                        }
+                    }
+                    .contact-form-right{
+                        display: flex;
+                        flex-direction: column;
+
+                        .right-header{
+                            margin-bottom: 20px;
+                            .title{
+                                font-size: 24px;
+                                color: #000;
+                            }
+                            .text{
+                                font-size: 16px;
+                                color: #777;
+                            }
+                        }
+                        form{
+                            display: flex;
+                            flex-direction: column;
+
+                            input{
+                                font-size: 18px;
+                                border: none;
+                                border-bottom: 1px solid #dcdcdc;
+                                padding: 5px 15px;
+                                height: 35px;
+                                line-height: 15px;
+                                font-weight: 600;
+                                display: block;
+                                margin-bottom: 20px;
+                                outline: none;
+                            }
+                            input:focus{
+                                border-bottom: 1px solid #ff9d0c;
+                            }
+                            .contact-form-submit{
+                                font-size: 14px;
+                                border-radius: 20px;
+                                text-align: center;
+                                cursor: pointer;
+                                outline: none;
+                                background: #ff9d0c;
+                                transition: .2s;
+                                border: 0;
+                                width: 50%;
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+
+
             }
         }
 
