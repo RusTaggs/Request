@@ -46,24 +46,31 @@ $(document).ready(function(){
   $('.header__menu__phone_button, .close-contact-form, .shadow1, .shadow2').click(function(){
     $('.contact-form, .shadow1, .shadow2').fadeToggle();
     $('.header__menu__phone').toggleClass('active');
-    
+    $(window).scroll(function(){
+      $('.contact-form, .shadow1, .shadow2').fadeOut();
+      
+    });
   });
 
-  //Закрытие окон при скроле
-  $(window).scroll(function(){
-    $('.contact-form, .shadow1, .shadow2, .category-list').fadeOut();
-    
-  });
+  
 
   //Вызов выборки категорий поиска
   $('.search-bar__list').click(function(){
     $('.category-list').fadeToggle();
+    $(window).scroll(function(){
+      $('.category-list').fadeOut();
+      
+    });
   });
 
   //Вызов окна при клике по оборудованию
 
   $('.equipment-container__item').click(function(){
-    $('.equipment-list').fadeToggle();
+    $('.equipment-list, .shadow1, .shadow2').fadeToggle();
+    
+  });
+  $('.list-more-open').click(function(){
+    $('.equipment-list-more').fadeIn();
   });
   
 
